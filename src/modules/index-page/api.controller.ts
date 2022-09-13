@@ -7,6 +7,7 @@ export class ApiController {
 
   @Get('/index')
   async getIndexData(): Promise<any> {
-    return await this.apiService.index();
+    console.log('index api');
+    return this.apiService.index();
   }
 }

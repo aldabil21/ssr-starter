@@ -2,6 +2,7 @@ import { ReactNestFetch } from 'ssr-types';
 
 const fetch: ReactNestFetch = async ({ ctx, routerProps }) => {
   if (!__isBrowser__) {
+    console.log('????');
     // const data = await (ctx as any)!.apiService?.index();
     return { mainData: { INITIALSSSSSS: 'INITIALSSSSSS' + Math.random() } };
   }
